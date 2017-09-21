@@ -29,11 +29,20 @@ public class StaticContentUnitTest {
 
     private MockMvc mockMvc;
 
+    /**
+     * This method sets up a global mock class for the rest of the test methods.
+     * @Before specifies that it should be executed first automatically, previous to any tests.
+     */
     @Before
     public void setup() {
         this.mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).build();
     }
 
+    /**
+     * This test method checks if a 'Get' petition to "/" returns a valid variable "message"
+     * and if its content is correct.
+     * @throws Exception
+     */
     @Test
     public void testMessage() throws Exception {
         this.mockMvc.perform(get("/"))
