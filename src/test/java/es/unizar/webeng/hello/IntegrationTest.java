@@ -23,6 +23,11 @@ public class IntegrationTest {
     @LocalServerPort
     private int port = 0;
 
+    /**
+     * This test method checks wether the 'Home' page returns a correct response status and body or not.
+     * If the body returned is not the expected or the connection fails, the test will not pass.
+     * @throws Exception
+     */
     @Test
     public void testHome() throws Exception {
         ResponseEntity<String> entity = new TestRestTemplate().getForEntity(
@@ -32,6 +37,13 @@ public class IntegrationTest {
                 .getBody().contains("<title>Hello"));
     }
 
+    /**
+     * This test method checks wether the website's CSS returns a correct response status and body or not,
+     * and also if the sheet returned is the expected.
+     * If the connection fails, the body is not valid or the sheet is other than specified, the test
+     * will not pass.
+     * @throws Exception
+     */
     @Test
     public void testCss() throws Exception {
         ResponseEntity<String> entity = new TestRestTemplate().getForEntity(

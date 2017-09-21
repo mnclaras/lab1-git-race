@@ -22,7 +22,13 @@ public class HelloControllerUnitTest {
     @Autowired
     private HelloController controller;
 
-
+    /**
+     * This test method checks wether the controller was creted successfully and its contents
+     * are correct.
+     * If the controller is not as expected and does not contain a correct 'message' value the
+     * test will not pass.
+     * @throws Exception
+     */
     @Test
     public void testMessage() throws Exception {
         HashMap<String, Object> map = new HashMap<>();
