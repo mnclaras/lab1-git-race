@@ -16,6 +16,6 @@ public class HelloController {
     public String welcome(Map<String, Object> model) {
         model.put("time", new Date());
         model.put("message", message);
-        return "wellcome";
+        return "welcome";
     }
 }
