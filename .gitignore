@@ -3,6 +3,9 @@
 *.iml
 build/
 
+# Ignore compilation output on IntelliJ IDEA
+out
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
