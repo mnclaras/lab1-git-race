@@ -41,7 +41,7 @@ public class StaticContentUnitTest {
     /**
      * This test method checks if a 'Get' petition to "/" returns a valid variable "message"
      * and if its content is correct.
-     * @throws Exception
+     * @throws Exception if the petition returns an invalid or incorrect message.
      */
     @Test
     public void testMessage() throws Exception {
