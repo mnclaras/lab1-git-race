@@ -2,7 +2,6 @@ plugins {
     id 'org.springframework.boot' version '1.5.7.RELEASE'
 }
 
-apply plugin: 'spring-boot'
 apply plugin: 'war'
 apply plugin: 'java'
 
