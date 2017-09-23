@@ -26,7 +26,7 @@ public class IntegrationTest {
     /**
      * This test method checks whether the 'Home' page returns a correct response status and body or not.
      * 
-     * @throws Exception iuf the body returned is not the expected or the connection fails.
+     * @throws Exception if the body returned is not the expected or the connection fails.
      */
     @Test
     public void testHome() throws Exception {
