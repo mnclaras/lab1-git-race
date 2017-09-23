@@ -7,15 +7,37 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.Date;
 import java.util.Map;
 
+/**
+ * Component that processes client requests.
+ * <p>
+ * The annotation @Controller is used so that the Spring container can detect, create and configure this component
+ * when automatic configuration and wiring is used.
+ */
 @Controller
 public class HelloController {
+    /**
+     * The annotation @Value is used to inject the value of the key "app.message" into the variable.
+     * If the key is not defined, the default value "Hello World" will be injected instead.
+     */
     @Value("${app.message:Hello World}")
     private String message;
 
+    /**
+     * Returns the logical name of the view that will be rendered when a GET request for "/" comes in.
+     * <p>
+     * It populates the model with some welcome information (the current date and time and a simple welcome message)
+     * that the view is going to receive.
+     * <p>
+     * The annotation @GetMapping is used to specify that the method is going to get called only when a GET request
+     * for "/" comes in.
+     *
+     * @param model  the information that is going to be handed off to the view
+     * @return the logical name of the view
+     */
     @GetMapping("/")
     public String welcome(Map<String, Object> model) {
         model.put("time", new Date());
         model.put("message", message);
-        return "wellcome";
+        return "welcome";
     }
 }
