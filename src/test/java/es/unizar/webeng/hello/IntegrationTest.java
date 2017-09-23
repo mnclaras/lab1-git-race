@@ -41,7 +41,7 @@ public class IntegrationTest {
      * This test method checks whether the website's CSS returns a correct response status and body or not,
      * and also if the sheet returned is the expected.
      * 
-     * @throws Exception f the connection fails, the body is not valid or the sheet is other than specified.
+     * @throws Exception if the connection fails, the body is not valid or the sheet is other than specified.
      */
     @Test
     public void testCss() throws Exception {
