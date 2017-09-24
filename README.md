@@ -8,3 +8,4 @@ User name | NIA | Travis-CI|Score
 Dario Sanchez Salvador | 680239 | [![Build Status](https://travis-ci.org/dari1495/lab1-git-race.svg)](https://travis-ci.org/dari1495/lab1-git-race)
 Pedro Fortón | 652062 | [![Build Status](https://travis-ci.org/Concatenacion/lab1-git-race.svg)](https://travis-ci.org/Concatenacion/lab1-git-race)
 Marius Nemtanu | 605472 | [![Build Status](https://travis-ci.org/MIN605472/lab1-git-race.svg)](https://travis-ci.org/MIN605472/lab1-git-race)
+Mario Navarro Claras | 453948 | [![Build Status](https://api.travis-ci.org/mnclaras/lab1-git-race.svg)](https://travis-ci.org/mnclaras/lab1-git-race)
