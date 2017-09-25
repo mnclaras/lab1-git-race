@@ -25,15 +25,14 @@ public class HelloControllerUnitTest {
     /**
      * This test method checks wether the controller was creted successfully and its contents
      * are correct.
-     * If the controller is not as expected and does not contain a correct 'message' value the
-     * test will not pass.
-     * @throws Exception
+     * 
+     * @throws Exception if the controller is not as expected and does not contain a correct 'message' value.
      */
     @Test
     public void testMessage() throws Exception {
         HashMap<String, Object> map = new HashMap<>();
         String view = controller.welcome(map);
-        assertThat(view, is("wellcome"));
+        assertThat(view, is("welcome"));
         assertThat(map.containsKey("message"), is(true));
         assertThat(map.get("message"), is(message));
     }
