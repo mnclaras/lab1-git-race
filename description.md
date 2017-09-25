@@ -1,14 +1,14 @@
-#Installing Gradle on Windows 10
+# Installing Gradle on Windows 10
 1. Download the latest Gradlle distribution, in this case, version 4.2
 1. Unpack the distribution.
-    1. Create a new directory, named Gradle.
+	1. Create a new directory, named Gradle.
 	1. Extract the the zip content in the newly created folder. You can unpack the distribution using an archiver tool of your choice.
 1. Configure your system environment.
 	1. In File Explorer right-click on the This PC (or Computer)  icon, then click Properties -> Advanced System Settings -> Environmental Variables.
 	1. Under System Variables select Path, then click Edit. Add an entry for `C:\Gradle\gradle-4.2\bin` and name it GRADLE_HOME. Click OK to save.
 1. Verify your installation with the command `gradle -v` on your console system
 
-####Common error.
+#### Common error.
 * `tools.js not found` when `gradle -v`
 
     To fix this, a new user variable must be created (like `GRADLE_HOME` one).
@@ -16,9 +16,9 @@
     Ultimately, edit the variable PATH adding `;%JAVA_HOME%\bin` at the end.
 
 
-#Deployment with Heroku
+# Deployment with Heroku
 
-###Procfile
+### Procfile
 A [Procfile](https://devcenter.heroku.com/articles/procfile) is a text file in the root directory of your application 
 that defines process types and explicitly declares what command should be executed to start your app. 
 It is optional, and you need to include it only if your application needs any special configuration to run.
@@ -46,7 +46,7 @@ And last, we must specify the special behavior when starting the application. In
 web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/webeng.war
 ```
 
-##Step-by-step deployment
+## Step-by-step deployment
 1. Create a free account in [Heroku](https://signup.heroku.com/).
 1. If you already had an account, the main page will show you your web applications.
 1. Click on `New` at the right upper corner, and then click on `Create New App`.
