@@ -13,22 +13,23 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 /**
-*   Annotation: @RunWith(SpringRunner.class)  Annotation from Junit, Junit will run using Spring's testing support.
-*	 SpringRunner is the new name for SpringJUnit4ClassRunner.
-*	@see org.junit.runner.RunWith
+*    Annotations used in the code:<br>
+*   <em>@RunWith(SpringRunner.class)</em>  Annotation from Junit, Junit will run using Spring's testing support.
+*	 SpringRunner is the new name for SpringJUnit4ClassRunner.<br>
+*	External link for more info <a href="http://junit.sourceforge.net/javadoc/org/junit/runner/RunWith.html">sourceforge.net RunWith</a><br><br>
 *
-*   Annotation: @WebMvcTest(HelloController.class)  Start the Spring application context without the server, 
-*	in that case Spring Boot is only instantiating one controller HelloController.
-*	@see org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
+*   <em>@WebMvcTest(HelloController.class)</em>  Start the Spring application context without the server, 
+*	in that case Spring Boot is only instantiating one controller HelloController.<br>
+*	External link for more info<a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/autoconfigure/web/servlet/WebMvcTest.html">spring.io WebMvcTest</a><br><br>
 *
-*   Annotation: @Value("${app.message:Hello World}")  We can inject the value from a file into 
+*   <em>@Value("${app.message:Hello World}")</em>  We can inject the value from a file into 
 *	a variable with that syntax  @Value("${value.from.file}"), in case it's not defined 
-*	we use double dots @Value("${unknown.param:Hello World}") and the text Hello World will be injected.
-*	@see org.springframework.beans.factory.annotation.Value
+*	we use double dots @Value("${unknown.param:Hello World}") and the text Hello World will be injected.<br>
+*	External link for more info<a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html">spring.io Value</a><br><br>
 *
-*   Annotation: @Autowired This annotation will scan on the packpage for annotations like Controller,
-*	 Component, Repository or simple bean, to auto-inject all the necesary into the variable.
-*	@see org.springframework.beans.factory.annotation.Autowired
+*   <em>@Autowired</em> This annotation will scan on the packpage for annotations like Controller,
+*	 Component, Repository or simple bean, to auto-inject all the necesary into the variable.<br>
+*	External link for more info<a href="https://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/beans/factory/annotation/Autowired.html">spring.io Autowired</a><br><br>
 *	
 */
 @RunWith(SpringRunner.class)
