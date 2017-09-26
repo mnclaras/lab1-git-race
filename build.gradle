@@ -45,3 +45,7 @@ task testJavadoc(type: Javadoc) {
     destinationDir = file("${buildDir}/docs/testjavadoc")
     println (title == null? '<null>' : title)
 }
+
+check {
+    dependsOn javadoc, testJavadoc
+}
