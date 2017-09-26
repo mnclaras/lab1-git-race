@@ -60,9 +60,3 @@ pass all tests on every push to master. Finally, click on `Enable automatic depl
 1. If you want to access to the web application, go to the right upper corner and click on `Open app`. If you are facing
 with errors at the moment of visualize the web page, you can also see the log by clicking on `More ->  View logs` button
 in the same place as the previous button. This will give you information in a console.
-
-
-
-
-
-
