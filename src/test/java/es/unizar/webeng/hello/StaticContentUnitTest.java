@@ -31,7 +31,7 @@ public class StaticContentUnitTest {
 
     /**
      * This method sets up a global mock class for the rest of the test methods.
-     * @Before specifies that it should be executed first automatically, previous to any tests.
+     * Before specifies that it should be executed first automatically, previous to any tests.
      */
     @Before
     public void setup() {
