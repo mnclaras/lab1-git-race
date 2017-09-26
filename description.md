@@ -76,4 +76,9 @@ Spring's main features:
     # Spring MVC web application and RESTful web service framework - Spring provides a strong framework for developing
         web services and applications.
 
-in the same place as the previous button. This will give you information in a console.
+### Trigger a new Travis-CI build
+Travis brings now a beta feature that allows to trigger a new build without altering git history. This could be useful for
+building the code with Travis if commits were added before setting up Travis:
+1. On your Travis repository, click on 'More options' at the right.
+2. Select 'Trigger build'.
+3. Fill the fields with the new config (optional) and click on 'Trigger custom build'.
