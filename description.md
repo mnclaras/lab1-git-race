@@ -61,24 +61,23 @@ pass all tests on every push to master. Finally, click on `Enable automatic depl
 with errors at the moment of visualize the web page, you can also see the log by clicking on `More ->  View logs` button
 
 ### Spring Framework Overview
-[Spring doc](https://spring.io/docs)
-The Spring framework provides a comprehensive programming and configuration model for modern Java applications for
+The [Spring](https://spring.io/docs) framework provides a comprehensive programming and configuration model for modern Java applications for
 any platform. A key element of Spring is infrastructural support at the application level: Spring focuses on the wiring
 of enterprise applications so that teams can focus on application-level business logic, without unnecessary ties
 to specific deployment environments.
 
 Spring's main features:
-    # Dependency injection - Decoupling dependent components from each other makes testing easier and
+    * [Dependency injection](http://www.vogella.com/tutorials/SpringDependencyInjection/article.html) - Decoupling dependent components from each other makes testing easier and
         increases re-usability.
-    # Aspect-Oriented Programming (AOP) - Through the concept of 'aspects', Spring achieves modularization of concerns
+    * [Aspect-Oriented Programming (AOP)](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/aop.html) - Through the concept of 'aspects', Spring achieves modularization of concerns
         such as transaction management that cut across multiple types and objects. Spring's declarative transactions
         work both with XML files or annotations.
-    # Spring MVC web application and RESTful web service framework - Spring provides a strong framework for developing
+    * [Spring MVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html) web application and RESTful web service framework - Spring provides a strong framework for developing
         web services and applications.
 
 ### Trigger a new Travis-CI build
 Travis brings now a beta feature that allows to trigger a new build without altering git history. This could be useful for
 building the code with Travis if commits were added before setting up Travis:
 1. On your Travis repository, click on 'More options' at the right.
-2. Select 'Trigger build'.
-3. Fill the fields with the new config (optional) and click on 'Trigger custom build'.
+1. Select 'Trigger build'.
+1. Fill the fields with the new config (optional) and click on 'Trigger custom build'.

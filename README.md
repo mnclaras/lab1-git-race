@@ -9,4 +9,5 @@ Dario Sanchez Salvador | 680239 | [![Build Status](https://travis-ci.org/dari149
 Pedro Fortón | 652062 | [![Build Status](https://travis-ci.org/Concatenacion/lab1-git-race.svg)](https://travis-ci.org/Concatenacion/lab1-git-race)
 Marius Nemtanu | 605472 | [![Build Status](https://travis-ci.org/MIN605472/lab1-git-race.svg)](https://travis-ci.org/MIN605472/lab1-git-race)
 Mario Navarro Claras [Online (Heroku)](https://lab1-git-race.herokuapp.com/)| 453948 | [![Build Status](https://api.travis-ci.org/mnclaras/lab1-git-race.svg)](https://travis-ci.org/mnclaras/lab1-git-race) | :gift:
+Daniel Martinez Martinez | 538798 | [![Build Status](https://travis-ci.org/danieluned/lab1-git-race.svg)](https://travis-ci.org/danieluned/lab1-git-race)
 Enrique Palacin Solano | 656531 | [![Build Status](https://travis-ci.org/kikcillo/lab1-git-race.svg)](https://travis-ci.org/kikcillo/lab1-git-race)
