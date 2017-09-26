@@ -18,9 +18,10 @@ public class HelloController {
     /**
      * The annotation @Value is used to inject the value of the key "app.message" into the variable.
      * If the key is not defined, the default value "Hello World" will be injected instead.
+	 * Message variable is a message to display.
      */
     @Value("${app.message:Hello World}")
-    private String message;						//message to display.
+    private String message;	
 
     /**
      * Returns the logical name of the view that will be rendered when a GET request for "/" comes in.
@@ -36,9 +37,9 @@ public class HelloController {
      */
     @GetMapping("/")
     public String welcome(Map<String, Object> model) {
-		//Assign in the key "time" a new date.
+	//Assign in the key "time" a new date.
         model.put("time", new Date());
-		//Assign in the key "message" the value of the message variable.
+	//Assign in the key "message" the value of the message variable.
         model.put("message", message);
         return "welcome";
     }

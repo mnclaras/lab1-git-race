@@ -8,7 +8,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 
-	/*
+	/**
 	 *This main method uses SprinApplication.run() to launch the application.
 	 */
     public static void main(String[] args) {
