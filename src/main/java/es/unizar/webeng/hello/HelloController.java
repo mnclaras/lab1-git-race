@@ -20,7 +20,7 @@ public class HelloController {
      * If the key is not defined, the default value "Hello World" will be injected instead.
      */
     @Value("${app.message:Hello World}")
-    private String message;
+    private String message;						//message to display.
 
     /**
      * Returns the logical name of the view that will be rendered when a GET request for "/" comes in.
@@ -36,7 +36,9 @@ public class HelloController {
      */
     @GetMapping("/")
     public String welcome(Map<String, Object> model) {
+		//Assign in the key "time" a new date.
         model.put("time", new Date());
+		//Assign in the key "message" the value of the message variable.
         model.put("message", message);
         return "welcome";
     }

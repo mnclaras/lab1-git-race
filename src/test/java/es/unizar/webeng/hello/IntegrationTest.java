@@ -18,6 +18,9 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @DirtiesContext
+/*
+ * This class check if the messages that are sent to the server contains what is expected.
+ */
 public class IntegrationTest {
 
     @LocalServerPort
