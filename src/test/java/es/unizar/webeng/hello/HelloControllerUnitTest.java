@@ -20,16 +20,16 @@ import static org.junit.Assert.assertThat;
 *
 *   <em>@WebMvcTest(HelloController.class)</em>  Start the Spring application context without the server, 
 *	in that case Spring Boot is only instantiating one controller HelloController.<br>
-*	External link for more info<a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/autoconfigure/web/servlet/WebMvcTest.html">spring.io WebMvcTest</a><br><br>
+*	External link for more info <a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/autoconfigure/web/servlet/WebMvcTest.html">spring.io WebMvcTest</a><br><br>
 *
 *   <em>@Value("${app.message:Hello World}")</em>  We can inject the value from a file into 
 *	a variable with that syntax  @Value("${value.from.file}"), in case it's not defined 
 *	we use double dots @Value("${unknown.param:Hello World}") and the text Hello World will be injected.<br>
-*	External link for more info<a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html">spring.io Value</a><br><br>
+*	External link for more info <a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html">spring.io Value</a><br><br>
 *
 *   <em>@Autowired</em> This annotation will scan on the packpage for annotations like Controller,
 *	 Component, Repository or simple bean, to auto-inject all the necesary into the variable.<br>
-*	External link for more info<a href="https://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/beans/factory/annotation/Autowired.html">spring.io Autowired</a><br><br>
+*	External link for more info <a href="https://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/beans/factory/annotation/Autowired.html">spring.io Autowired</a><br><br>
 *	
 */
 @RunWith(SpringRunner.class)
