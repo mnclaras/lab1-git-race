@@ -18,7 +18,7 @@ public class HelloController {
     /**
      * The annotation @Value is used to inject the value of the key "app.message" into the variable.
      * If the key is not defined, the default value "Hello World" will be injected instead.
-	 * Message variable is a message to display.
+     * Message variable is a message to display.
      */
     @Value("${app.message:Hello World}")
     private String message;	
