@@ -15,9 +15,9 @@ import static org.junit.Assert.assertThat;
 /**
 *   Annotations used in the code:<br>
 *   <em>@RunWith(SpringRunner.class)</em>  Annotation from Junit, Junit will run using Spring's testing support.
-*	JUnit will invoke the SpringRunner class to run the tests in that class instead of the runner built into JUnit.
-	SpringRunner is the new name for SpringJUnit4ClassRunner.<br>
-*	External link for more info <a href="http://junit.sourceforge.net/javadoc/org/junit/runner/RunWith.html">sourceforge.net RunWith</a><br><br>
+*	 JUnit will invoke the SpringRunner class to run the tests in that class instead of the runner built into JUnit.
+*	 SpringRunner is the new name for SpringJUnit4ClassRunner.<br>
+*	 External link for more info <a href="http://junit.sourceforge.net/javadoc/org/junit/runner/RunWith.html">sourceforge.net RunWith</a><br><br>
 *
 *   <em>@WebMvcTest(HelloController.class)</em>  Start the Spring application context without the server, 
 *	in that case Spring Boot is only instantiating one controller HelloController.
@@ -30,6 +30,21 @@ import static org.junit.Assert.assertThat;
 *	External link for more info <a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html">spring.io Value</a><br><br>
 *
 *   <em>@Autowired</em> Annotation to auto wire bean on the field. This annotation will scan on the packpage for annotations like Controller,
+*    Annotations used in the code:<br>
+*   <em>@RunWith(SpringRunner.class)</em>  Annotation from Junit, Junit will run using Spring's testing support.
+*	 SpringRunner is the new name for SpringJUnit4ClassRunner.<br>
+*	External link for more info <a href="http://junit.sourceforge.net/javadoc/org/junit/runner/RunWith.html">sourceforge.net RunWith</a><br><br>
+*
+*   <em>@WebMvcTest(HelloController.class)</em>  Start the Spring application context without the server, 
+*	in that case Spring Boot is only instantiating one controller HelloController.<br>
+*	External link for more info <a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/autoconfigure/web/servlet/WebMvcTest.html">spring.io WebMvcTest</a><br><br>
+*
+*   <em>@Value("${app.message:Hello World}")</em>  We can inject the value from a file into 
+*	a variable with that syntax  @Value("${value.from.file}"), in case it's not defined 
+*	we use double dots @Value("${unknown.param:Hello World}") and the text Hello World will be injected.<br>
+*	External link for more info <a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html">spring.io Value</a><br><br>
+*
+*   <em>@Autowired</em> This annotation will scan on the packpage for annotations like Controller,
 *	 Component, Repository or simple bean, to auto-inject all the necesary into the variable.<br>
 *	External link for more info <a href="https://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/beans/factory/annotation/Autowired.html">spring.io Autowired</a><br><br>
 *	
