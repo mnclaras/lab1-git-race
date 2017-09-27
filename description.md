@@ -67,12 +67,10 @@ of enterprise applications so that teams can focus on application-level business
 to specific deployment environments.
 
 Spring's main features:
-    * [Dependency injection](http://www.vogella.com/tutorials/SpringDependencyInjection/article.html) - Decoupling dependent components from each other makes testing easier and
+* [Dependency injection](http://www.vogella.com/tutorials/SpringDependencyInjection/article.html) - Decoupling dependent components from each other makes testing easier and
         increases re-usability.
-    * [Aspect-Oriented Programming (AOP)](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/aop.html) - Through the concept of 'aspects', Spring achieves modularization of concerns
-        such as transaction management that cut across multiple types and objects. Spring's declarative transactions
-        work both with XML files or annotations.
-    * [Spring MVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html) web application and RESTful web service framework - Spring provides a strong framework for developing
+* [Aspect-Oriented Programming (AOP)](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/aop.html) - Through the concept of 'aspects', Spring achieves modularization of 		concerns such as transaction management that cut across multiple types and objects. Spring's declarative transactions work both with XML files or annotations.
+* [Spring MVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html) web application and RESTful web service framework - Spring provides a strong framework for developing
         web services and applications.
 
 ### Trigger a new Travis-CI build
