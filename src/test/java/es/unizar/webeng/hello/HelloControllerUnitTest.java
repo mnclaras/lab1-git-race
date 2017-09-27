@@ -27,11 +27,13 @@ import static org.junit.Assert.assertThat;
 *   <em>@Value("${app.message:Hello World}")</em> Annotation that indicates a default value expression for the affected argument.
 *   We can inject the value from a file into a variable with that syntax  @Value("${value.from.file}"), in case it's not defined 
 *	we use double dots @Value("${unknown.param:Hello World}") and the text Hello World will be injected.<br>
-*	External link for more info @see  <a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html">spring.io Value</a><br><br>
+*	
 *
 *   <em>@Autowired</em> Annotation to auto wire bean on the field. This annotation will scan on the packpage for annotations like Controller,
 *	 Component, Repository or simple bean, to auto-inject all the necesary into the variable.<br>
-*	External link for more info @see <a href="https://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/beans/factory/annotation/Autowired.html">spring.io Autowired</a><br><br>
+*	
+*   @see <a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Value.html">org.springframework.beans.factory.annotation.Value</a>
+*   @see <a href="https://docs.spring.io/spring-framework/docs/2.5.x/api/org/springframework/beans/factory/annotation/Autowired.html">org.springframework.beans.factory.annotation.Autowired</a>
 *	
 */
 @RunWith(SpringRunner.class)
