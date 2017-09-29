@@ -22,7 +22,8 @@
 ```
 sudo apt install gradle
 ```
-1. Verify your installation with the command `gradle -v` on your Ubuntu system
+
+2. Verify your installation with the command `gradle -v` on your Ubuntu system
 
 # Deployment with Heroku
 
