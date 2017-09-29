@@ -10,6 +10,7 @@ public class Application extends SpringBootServletInitializer {
 
    /**
     * This main method uses {@code SpringApplication.run(Application.class, args)} to launch the application.
+    * @param args Contains the supplied command-line arguments
     */
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
