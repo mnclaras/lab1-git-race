@@ -1,4 +1,6 @@
-# Installing Gradle on Windows 10
+# Installing Gradle
+
+## Windows 10
 1. Download the latest Gradlle distribution, in this case, version 4.2
 1. Unpack the distribution.
 	1. Create a new directory, named Gradle.
@@ -15,6 +17,13 @@
     Name it `JAVA_HOME`, and refers to JDK installation folder (`C:\Program Files\Java\jdk1.8`... is a possible route).
     Ultimately, edit the variable PATH adding `;%JAVA_HOME%\bin` at the end.
 
+## Ubuntu
+1. To install Gradle on your Ubuntu system, use this command at a terminal prompt:
+```
+sudo apt install gradle
+```
+
+2. Verify your installation with the command `gradle -v` on your Ubuntu system
 
 # Deployment with Heroku
 

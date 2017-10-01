@@ -15,6 +15,31 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
+/**
+*   Annotations used in the code:<br>
+*   {@code @SpringBootTest(webEnvironment = RANDOM_PORT)}: {@code @SpringBootTest} 
+*   is an annotation which is used as an alternative to the standard spring-test 
+*   <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/test/context/ContextConfiguration.html">@ContextConfiguration</a> 
+*   annotation (which defines class-level metadata that is used to determine 
+*   how to load and configure an ApplicationContext for integration tests). <br>
+*   The attribute webEnvironment refine how the tests will run, and in this case, 
+*   the option RAMDOM_PORT is chosen to loads an <a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/context/embedded/EmbeddedWebApplicationContext.html">EmbeddedWebApplicationContext</a>
+*   and provides a real servlet environment. Embedded servlet containers are 
+*   started and listening on a random port.
+*   <p>
+*   {@code @DirtiesContext}: Test annotation which indicates that the 
+*   ApplicationContext associated with a test is dirty and should therefore 
+*   be closed and removed from the context cache. When an ApplicationContext 
+*   is marked dirty, it is removed from the testing framework's cache and closed.
+*   <p>
+*   {@code @LocalServerPort}: Injects the HTTP port that got allocated at runtime
+*   into the variable.
+*
+*
+*   @see <a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/context/SpringBootTest.WebEnvironment.html">org.springframework.boot.test.context.SpringBootTest.WebEnvironment</a>
+*   @see <a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/annotation/DirtiesContext.html">org.springframework.test.annotation.DirtiesContext</a>
+*   @see <a href="https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/context/embedded/LocalServerPort.html">org.springframework.boot.context.embedded.LocalServerPort</a>
+*/
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @DirtiesContext
