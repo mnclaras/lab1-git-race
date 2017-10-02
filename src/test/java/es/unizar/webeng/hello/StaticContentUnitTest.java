@@ -17,6 +17,20 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+/**
+*   Annotations used in the code:<br>
+*	{@code @Before}: Advice annotation. Advice is associated with a pointcut expression, and runs,
+*	in this case, before method executions matched by the pointcut, but it is also possible to use after or around.
+*	The pointcut expression may be either a simple reference to a named pointcut, or a pointcut expression declared in place.
+*	<p>
+*	{@code @Test}: JUnit annotation that specify that the public void method to which it is attached can be run as a test case.
+*	To run the method, JUnit first constructs a fresh instance of the class then invokes the annotated method.
+*	Any exceptions thrown by the test will be reported by JUnit as a failure. If no exceptions are thrown, the test is assumed to have succeeded.
+*
+*	@see <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop-advice">spring.io Before</a>
+*	@see <a href="http://junit.sourceforge.net/javadoc/org/junit/Test.html">sourceforge.net Test</a>
+*/
+
 @RunWith(SpringRunner.class)
 @WebMvcTest(HelloController.class)
 public class StaticContentUnitTest {
