@@ -18,7 +18,24 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
+
+/**
 *   Annotations used in the code:<br>
+*   <code> @RunWith(SpringRunner.class) </code> Annotation from Junit, Junit will run using Spring's testing support.
+*    JUnit will invoke the SpringRunner class to run the tests in that class instead of the runner built into JUnit.
+*    <code> SpringRunner </code> is the new name for <code> SpringJUnit4ClassRunner </code> <br>
+*
+*   <code> @WebMvcTest(HelloController.class) </code> Start the Spring application context without the server, 
+*   in that case Spring Boot is only instantiating one controller <code> HelloController </code>.
+*   Using this annotation will disable full auto-configuration and instead apply only configuration relevant to MVC tests.<br>
+*
+*   <code> @Value("${app.message:Hello World}") </code> Annotation that indicates a default value expression for the affected argument.
+*   We can inject the value from a file into a variable with that syntax <code> @Value("${value.from.file}") </code>, in case it's not defined 
+*   we use double dots <code> @Value("${unknown.param:Hello World}") </code> and the text Hello World will be injected.<br>
+*
+*   <code> @Autowired </code> Annotation to auto wire bean on the field. This annotation will scan on the packpage for annotations like Controller, 
+*   Component, Repository or simple bean, to auto-inject all the necesary into the variable.<br>
+
 *	{@code @Before}: Advice annotation. Advice is associated with a pointcut expression, and runs,
 *	in this case, before method executions matched by the pointcut, but it is also possible to use after or around.
 *	The pointcut expression may be either a simple reference to a named pointcut, or a pointcut expression declared in place.
