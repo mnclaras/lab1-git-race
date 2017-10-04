@@ -23,19 +23,15 @@ public class HelloController {
      * Message variable is a message to display.
      */
     @Value("${app.message:Hello World}")
-    private String messageMorning;
+    private String message;
     @Value("${app.message:Hello World}")
-    private String messageAfternoon;
-    @Value("${app.message:Hello World}")
-    private String messageEvening;
-    @Value("${app.message:Hello World}")
-    private String messageNight;	
+    private String salute;
 
     /**
      * Returns the logical name of the view that will be rendered when a GET request for "/" comes in.
      * <p>
      * It populates the model with some welcome information
-     * (the current date and time and a simple welcome message based on the hour of the day)
+     * (the current date and time, a simple welcome message and a salute based on the hour of the day)
      * that the view is going to receive.
      * <p>
      * The annotation @GetMapping is used to specify that the method is going to get called only when a GET request
@@ -57,15 +53,21 @@ public class HelloController {
 	//Gets hour in 24h format
 	int hour = calendar.get(Calendar.HOUR_OF_DAY); 
 
+	model.put("message", message);
+
 	//Assign in the key "message" the value of the specific message variable.
 	if (hour>=8 && hour<12){
-		model.put("message", messageMorning);
+		salute = "Good Morning!";
+		model.put("salute", salute);
 	} else if (hour>=12 && hour<18){
-		model.put("message", messageAfternoon);
+		salute = "Good Afternoon!";
+		model.put("salute", salute);
 	} else if (hour>=18){
-		model.put("message", messageEvening);
+		salute = "Good Evening!";
+		model.put("salute", salute);
 	} else {
-		model.put("message", messageNight);
+		salute = "Good Night!";
+		model.put("salute", salute);
 	}
 	
         return "welcome";
