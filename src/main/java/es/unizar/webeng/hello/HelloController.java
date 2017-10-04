@@ -46,6 +46,9 @@ public class HelloController {
 	//Assign in the key "time" a new date.
         model.put("time", date);
 
+	//Assign in the key "message" the value of the specific message variable.
+	model.put("message", message);
+
 	//Creates a new calendar instance
 	Calendar calendar = GregorianCalendar.getInstance();
 	//Assigns calendar to given date 
@@ -53,9 +56,7 @@ public class HelloController {
 	//Gets hour in 24h format
 	int hour = calendar.get(Calendar.HOUR_OF_DAY); 
 
-	model.put("message", message);
-
-	//Assign in the key "message" the value of the specific message variable.
+	//Assign in the key "salute" the value of the salute variable according to the hour.
 	if (hour>=8 && hour<12){
 		salute = "Good Morning!";
 		model.put("salute", salute);
@@ -66,7 +67,7 @@ public class HelloController {
 		salute = "Good Evening!";
 		model.put("salute", salute);
 	} else {
-		salute = "Good Night!";
+		salute = "You should sleep, Good Night!";
 		model.put("salute", salute);
 	}
 	
