@@ -21,7 +21,9 @@ public class HelloController {
      * Message variable is a message to display.
      */
     @Value("${app.message:Hello World}")
-    private String message;	
+    private String message;
+    @Value("${app.deadline:Oct 5, 2017 00:00:00}")
+    private String deadline;	
 
     /**
      * Returns the logical name of the view that will be rendered when a GET request for "/" comes in.
@@ -41,6 +43,8 @@ public class HelloController {
         model.put("time", new Date());
 	//Assign in the key "message" the value of the message variable.
         model.put("message", message);
+   //Assign in the key "deadline" the value of the deadline variable.
+        model.put("deadline", deadline);
         return "welcome";
     }
 }
