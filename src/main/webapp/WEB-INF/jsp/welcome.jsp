@@ -14,9 +14,11 @@ p {
 }
 </style>
 <p id="demo"></p>
+
+<kbd>${time}<span class="glyphicon glyphicon-console"></span>${message}</kbd>
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Oct 7, 2017 00:00:00").getTime();
+var countDownDate = new Date("Oct 5, 2017 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -33,8 +35,8 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = hours + ":"
-    + minutes + ":" + seconds;
+    document.getElementById("demo").innerHTML = "Tiempo hasta final de Git Race: "
+    + hours + ":" + minutes + ":" + seconds;
     
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -43,7 +45,6 @@ var x = setInterval(function() {
     }
 }, 1000);
 </script>
-<kbd>${time}<span class="glyphicon glyphicon-console"></span>${message}</kbd>
 <script type="text/javascript" src="webjars/jquery/2.1.4/jquery.min.js"></script>
 </body>
 
