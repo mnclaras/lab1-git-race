@@ -7,18 +7,12 @@
 <link rel="stylesheet" type="text/css"
       href="webjars/bootstrap/3.3.5/css/bootstrap.min.css"/>
 <body>
-<style>
-p {
-  text-align: center;
-  font-size: 60px;
-}
-</style>
-<p id="demo"></p>
 
 <kbd>${time}<span class="glyphicon glyphicon-console"></span>${message}</kbd>
+<p id="demo"></p>
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Oct 5, 2017 00:00:00").getTime();
+var countDownDate = new Date("Oct 7, 2017 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
