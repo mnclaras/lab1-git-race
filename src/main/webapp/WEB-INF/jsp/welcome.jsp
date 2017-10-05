@@ -9,7 +9,7 @@
 <body>
 
 <kbd>${time}<span class="glyphicon glyphicon-console"></span>${message}</kbd>
-<p id="demo"></p>
+<kbd id="demo"></kbd>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 7, 2017 00:00:00").getTime();
