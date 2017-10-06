@@ -8,8 +8,8 @@
 <link rel="stylesheet" type="text/css"
       href="webjars/bootstrap/3.3.5/css/bootstrap.min.css"/>
 <body>
-
-<div class="text-justify"><kbd>${time}<span class="glyphicon glyphicon-console"></span>${message}</kbd></div>
+<h1>${salute}</h1>
+<kbd>${time}<span class="glyphicon glyphicon-console"></span>${message}</kbd>
 <div class="text-center"><kbd id="countdown_clock"></kbd></div>
 
 <script>
