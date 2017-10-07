@@ -77,7 +77,7 @@ public class HelloController {
 
         //Assign in the key "salute" the value of the salute variable.
         model.put("salute", salute);
-	      //Assign in the key "deadline" the value of the deadline variable.
+        //Assign in the key "deadline" the value of the deadline variable.
         model.put("deadline", deadline);
       
         return "welcome";
