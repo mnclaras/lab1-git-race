@@ -23,7 +23,7 @@ public class HelloController {
      * Message variable is a message to display.
      */
     @Value("${app.message:Hello World}")
-    private String message;	
+    private String message;
     @Value("${app.message:Hello World}")
     private String salute;
     @Value("${app.deadline:Oct 5, 2017 00:00:00}")
