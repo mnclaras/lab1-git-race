@@ -17,7 +17,7 @@
 var countDownDate = new Date("${deadline}").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var interval = setInterval(function() {
 
     // Get todays date and time
     var now = new Date().getTime();
@@ -26,18 +26,19 @@ var x = setInterval(function() {
     var distance = countDownDate - now;
     
     // Time calculations for hours, minutes and seconds
-    var hours = Math.floor(distance/ (1000 * 60 * 60));
+    var hours = Math.floor(distance / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     // Output the result in an element with id="countdown_clock"
-    document.getElementById("countdown_clock").innerHTML = 
-    "Tiempo hasta final de Git Race: " + hours + ":" + minutes + ":" + seconds;
+    var clock = document.getElementById("countdown_clock");
+    clock.innerHTML = "Tiempo hasta final de Git Race: " 
+          + hours + ":" + minutes + ":" + seconds;
     
     // If the count down is over, notify it
     if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown_clock").innerHTML = "PLAZO FINALIZADO";
+        clearInterval(interval);
+        clock.innerHTML = "PLAZO FINALIZADO";
     }
 }, 1000);
 </script>
